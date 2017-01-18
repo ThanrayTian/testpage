@@ -13,8 +13,8 @@ console.log("Hello Word");
 
 var browser=navigator.appName
 var b_version=navigator.appVersion
-var version=parseFloat(b_version)
-var BrowserName=browser+version; 
+// var version=parseFloat(b_version)
+var BrowserName=browser+b_version; 
 
 if(BroswerName == 'Mozilla/Secret VIP1.0') {
     var flag=getCookie('flag');
